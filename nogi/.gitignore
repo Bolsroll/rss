@@ -1,0 +1,4 @@
+*.log
+.DS_Store
+保存/
+*.rtf

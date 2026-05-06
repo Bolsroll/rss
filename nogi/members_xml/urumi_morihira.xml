@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+<title>森平 麗心 Blog</title>
+<link>https://www.nogizaka46.com/</link>
+<description>森平 麗心のブログRSS</description>
+
+        <item>
+            <title>じー</title>
+            <link>https://www.nogizaka46.com/s/n46/diary/detail/104563?ima=5956&cd=MEMBER</link>
+            <pubDate>2026.05.03 18:56</pubDate>
+        </item>
+        
+        <item>
+            <title>おさがりです</title>
+            <link>https://www.nogizaka46.com/s/n46/diary/detail/104555?ima=0004&cd=MEMBER</link>
+            <pubDate>2026.04.30 21:30</pubDate>
+        </item>
+        
+        <item>
+            <title>聖飢魔46</title>
+            <link>https://www.nogizaka46.com/s/n46/diary/detail/104553?ima=0007&cd=MEMBER</link>
+            <pubDate>2026.04.29 21:42</pubDate>
+        </item>
+        
+</channel>
+</rss>

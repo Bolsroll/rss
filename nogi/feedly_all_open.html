@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Feedly一括登録</title>
+</head>
+<body>
+
+<h2>乃木坂RSS 一括登録</h2>
+<button onclick="openAll()">全部開く</button>
+
+<script>
+function openAll() {
+    const urls = [
+        "https://Bolsroll.github.io/nogizaka-rss/members_xml/moeka_yada.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/urumi_morihira.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/mirine_masuda.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/mitsuki_setoguchi.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/yuuna_suzuki.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/hina_kawabata.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/akari_kaibe.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/reina_ozu.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/hinano_okoshi.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/kokone_atago.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/rio_nagashima.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/hina_okamoto.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/sakura_kawasaki.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/teresa_ikeda.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/mao_ioki.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/aruno_nakanishi.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/iroha_okuda.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/nao_tomisato.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/aya_ogawa.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/satsuki_sugawara.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/nagi_inoue.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/yumiki_nao.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/matsuo_miyu.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/hayashi_runa.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/sato_rika.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/kuromi_haruka.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/seimiya_rei.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/kitagawa_yuri.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/kanagawa_saya.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/yakubo_mio.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/hayakawa_seira.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/kakehashi_sayaka.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/kaki_haruka.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/tsutsui_ayame.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/tamura_mayu.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/shibata_yuna.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/endo_sakura.xml",
+"https://Bolsroll.github.io/nogizaka-rss/members_xml/miku_ichinose.xml"
+    ];
+
+    urls.forEach((url, i) => {
+        setTimeout(() => window.open(url, "_blank"), i * 300);
+    });
+}
+</script>
+
+</body>
+</html>
