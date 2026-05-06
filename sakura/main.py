@@ -12,7 +12,7 @@ from playwright.async_api import async_playwright
 LOCK_FILE = "/tmp/sakamichi_rss.lock"
 
 # ==========================
-# ★ディレクトリ固定（事故防止）
+# ★ディレクトリ固定
 # ==========================
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -59,7 +59,7 @@ def save_data(data):
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 # --------------------------
-# scrape（修正版）
+# scrape
 # --------------------------
 async def scrape(page):
     await page.goto(BASE_URL, timeout=60000)
@@ -84,11 +84,8 @@ async def scrape(page):
 
         card = link.locator("xpath=ancestor::li").first
 
-        # --------------------------
-        # タイトル（優先: h3 → fallback: a）
-        # --------------------------
+        # タイトル
         title = None
-
         try:
             el = card.locator("h3").first
             if await el.count():
@@ -106,13 +103,11 @@ async def scrape(page):
         if not title or title in ["前へ", "次へ"]:
             continue
 
-        # ❗「○○公式ブログ」除外（これが余計なやつ）
+        # 余計な「公式ブログ」除外
         if "公式ブログ" in title:
             continue
 
-        # --------------------------
         # メンバー
-        # --------------------------
         name = "unknown"
         try:
             el = card.locator("p.name").first
@@ -121,9 +116,7 @@ async def scrape(page):
         except:
             pass
 
-        # --------------------------
         # 日付
-        # --------------------------
         text = await card.inner_text()
         m = re.search(r"\d{4}/\d{1,2}/\d{1,2}", text)
 
@@ -144,6 +137,44 @@ async def scrape(page):
 
     return items
 
+# --------------------------
+# メンバー別JSON生成（★追加）
+# --------------------------
+def rebuild_members(all_items):
+    print("🔄 メンバー別JSON再構築開始")
+
+    # 既存削除
+    for f in os.listdir(MEMBER_DIR):
+        if f.endswith(".json"):
+            os.remove(os.path.join(MEMBER_DIR, f))
+
+    bucket = {}
+
+    for item in all_items:
+        name = item.get("member")
+
+        if not name or name == "unknown":
+            continue
+
+        bucket.setdefault(name, []).append(item)
+
+    for name, items in bucket.items():
+        safe = name.replace(" ", "").replace("/", "_")
+
+        items_sorted = sorted(
+            items,
+            key=lambda x: datetime.strptime(x["date"], "%Y/%m/%d %H:%M") if x["date"] else datetime.min,
+            reverse=True
+        )
+
+        path = os.path.join(MEMBER_DIR, f"{safe}.json")
+
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(items_sorted[:MAX_ITEMS], f, ensure_ascii=False, indent=2)
+
+        print(f"  → {name}: {len(items_sorted)}件")
+
+    print("✅ メンバー別JSON再構築完了")
 
 # --------------------------
 # merge
@@ -213,6 +244,9 @@ async def main():
 
         save_data(all_data)
 
+        # ★ここが今回の追加
+        rebuild_members(all_data)
+
         generate_rss(all_data[:50])
 
         await browser.close()
@@ -220,7 +254,7 @@ async def main():
     print("✅ 完了")
 
 # --------------------------
-# run（共通ロック）
+# run
 # --------------------------
 if __name__ == "__main__":
     MAX_AGE = 30 * 60
