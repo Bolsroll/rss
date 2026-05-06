@@ -72,11 +72,14 @@ def valid_item(item):
 # --------------------------
 def generate_xml(member_name, items):
     key = member_name.replace(" ", "").replace("　", "")
-
     slug = member_map.get(key, key)
     safe_name = slug
 
-    # 重複除去
+    print(f"  ▶ 処理対象: {member_name}")
+
+    # --------------------------
+    # フィルタ＋重複除去
+    # --------------------------
     unique = {}
     for item in items:
         if not valid_item(item):
@@ -86,7 +89,15 @@ def generate_xml(member_name, items):
 
     items = list(unique.values())
 
+    print(f"  → フィルタ後件数: {len(items)}")
+
+    if not items:
+        print("  ⚠️ 有効データ0件 → XMLスキップ")
+        return
+
+    # --------------------------
     # ソート
+    # --------------------------
     def sort_key(x):
         try:
             return datetime.strptime(x["date"], "%Y/%m/%d %H:%M")
@@ -95,7 +106,9 @@ def generate_xml(member_name, items):
 
     items.sort(key=sort_key, reverse=True)
 
+    # --------------------------
     # XML生成
+    # --------------------------
     xml_items = ""
 
     for item in items:
@@ -128,7 +141,7 @@ def generate_xml(member_name, items):
     with open(path, "w", encoding="utf-8") as f:
         f.write(xml)
 
-    print(f"XML生成: {member_name} → {safe_name}（{len(items)}件）")
+    print(f"  ✅ XML生成: {safe_name}.xml")
 
 # --------------------------
 # メイン
@@ -136,25 +149,39 @@ def generate_xml(member_name, items):
 def main():
     files = os.listdir(MEMBER_DIR)
 
+    print(f"📂 JSONファイル数: {len(files)}")
+
     for file in files:
         if not file.endswith(".json"):
             continue
 
         path = os.path.join(MEMBER_DIR, file)
+        print(f"\n📄 読み込み: {file}")
 
         with open(path, "r", encoding="utf-8") as f:
             items = json.load(f)
 
+        print(f"  → 元データ件数: {len(items)}")
+
         if not items:
+            print("  ⚠️ 空ファイル → スキップ")
             continue
 
-        member_name = items[0].get("member")
-        if not member_name or member_name == "unknown":
+        # ★安全なmember取得（先頭依存回避）
+        member_name = next(
+            (x.get("member") for x in items if x.get("member") and x.get("member") != "unknown"),
+            None
+        )
+
+        print(f"  → 判定member: {member_name}")
+
+        if not member_name:
+            print("  ❌ member取得不可 → スキップ")
             continue
 
         generate_xml(member_name, items)
 
-    print("✅ メンバー別XML生成完了")
+    print("\n✅ メンバー別XML生成完了")
 
 # --------------------------
 # 実行（共通ロック）
