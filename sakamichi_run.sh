@@ -87,25 +87,22 @@ log "[GIT] cleanup"
 rm -f .git/index.lock 2>/dev/null || true
 rm -rf .git/rebase-merge 2>/dev/null || true
 
-# 認証待ち防止（超重要）
 export GIT_TERMINAL_PROMPT=0
 
 log "[GIT] add"
-git add . >> "$LOG_FILE" 2>&1
+git add -A >> "$LOG_FILE" 2>&1
 
-if git diff --cached --quiet; then
-    log "[GIT] no changes"
-else
-    log "[GIT] commit"
-    git commit -m "auto update $(date '+%Y-%m-%d %H:%M:%S')" >> "$LOG_FILE" 2>&1
+log "[GIT] commit"
+git commit -m "auto update $(date '+%Y-%m-%d %H:%M:%S')" >> "$LOG_FILE" 2>&1 || {
+    log "[GIT] nothing to commit (skip commit)"
+}
 
-    log "[GIT] push"
-    git push -f origin main >> "$LOG_FILE" 2>&1 || {
-        log "❌ git push失敗"
-        rm -f "$LOCK_FILE"
-        exit 1
-    }
-fi
+log "[GIT] push"
+git push -f origin main >> "$LOG_FILE" 2>&1 || {
+    log "❌ git push失敗"
+    rm -f "$LOCK_FILE"
+    exit 1
+}
 
 # =======================
 # 終了
