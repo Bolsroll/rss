@@ -65,13 +65,15 @@ async def scrape(page):
     await page.goto(BASE_URL, timeout=60000)
 
     cards = await page.locator("ul.com-blog-part > li.box").all()
-    cards = cards[:FETCH_LIMIT]
 
     items = []
     seen = set()
 
-    for card in cards:
+    for card in cards[:FETCH_LIMIT]:
+
         a = card.locator("a[href*='/diary/detail/']").first
+        if not await a.count():
+            continue
 
         href = await a.get_attribute("href")
         if not href:
@@ -87,18 +89,24 @@ async def scrape(page):
         # --------------------------
         # タイトル
         # --------------------------
-        title = None
-
-        el = card.locator("h3").first
-        if await el.count():
-            title = (await el.inner_text()).strip()
-
-        if not title:
-            raw = await a.inner_text()
-            title = raw.split("\n")[0].strip()
+        try:
+            title = await card.locator("h3").inner_text()
+            title = title.strip()
+        except:
+            continue
 
         if not title or title in ["前へ", "次へ"]:
             continue
+
+        # --------------------------
+        # メンバー
+        # --------------------------
+        name = "unknown"
+        try:
+            name = await card.locator("p.name").inner_text()
+            name = name.strip()
+        except:
+            pass
 
         # --------------------------
         # 日付
@@ -112,16 +120,17 @@ async def scrape(page):
         y, mo, d = m.group(0).split("/")
         date = f"{y}/{mo.zfill(2)}/{d.zfill(2)} 00:00"
 
-        print(f"取得: {title} / {date}")
+        print(f"取得: {title} / {name} / {date}")
 
         items.append({
             "title": title,
             "url": url,
             "date": date,
-            "member": "森田ひかる"
+            "member": name
         })
 
     return items
+
 
 # --------------------------
 # merge
