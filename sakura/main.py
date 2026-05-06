@@ -22,7 +22,7 @@ DATA_FILE = os.path.join(BASE_DIR, "data.json")
 MEMBER_DIR = os.path.join(BASE_DIR, "members")
 RSS_FILE = os.path.join(BASE_DIR, "rss.xml")
 
-FETCH_LIMIT = 30
+FETCH_LIMIT = 12
 MAX_ITEMS = 30
 
 # --------------------------
@@ -59,23 +59,19 @@ def save_data(data):
         json.dump(data, f, ensure_ascii=False, indent=2)
 
 # --------------------------
-# scrape（軽量高速版）
+# scrape（修正版）
 # --------------------------
 async def scrape(page):
     await page.goto(BASE_URL, timeout=60000)
 
-    cards = await page.locator("ul.com-blog-part > li.box").all()
+    links = await page.locator("a[href*='/diary/detail/']").all()
 
     items = []
     seen = set()
 
-    for card in cards[:FETCH_LIMIT]:
+    for link in links[:FETCH_LIMIT]:
 
-        a = card.locator("a[href*='/diary/detail/']").first
-        if not await a.count():
-            continue
-
-        href = await a.get_attribute("href")
+        href = await link.get_attribute("href")
         if not href:
             continue
 
@@ -86,16 +82,32 @@ async def scrape(page):
             continue
         seen.add(norm)
 
+        card = link.locator("xpath=ancestor::li").first
+
         # --------------------------
-        # タイトル
+        # タイトル（優先: h3 → fallback: a）
         # --------------------------
+        title = None
+
         try:
-            title = await card.locator("h3").inner_text()
-            title = title.strip()
+            el = card.locator("h3").first
+            if await el.count():
+                title = (await el.inner_text()).strip()
         except:
-            continue
+            pass
+
+        if not title:
+            try:
+                raw = await link.inner_text()
+                title = raw.split("\n")[0].strip()
+            except:
+                continue
 
         if not title or title in ["前へ", "次へ"]:
+            continue
+
+        # ❗「○○公式ブログ」除外（これが余計なやつ）
+        if "公式ブログ" in title:
             continue
 
         # --------------------------
@@ -103,8 +115,9 @@ async def scrape(page):
         # --------------------------
         name = "unknown"
         try:
-            name = await card.locator("p.name").inner_text()
-            name = name.strip()
+            el = card.locator("p.name").first
+            if await el.count():
+                name = (await el.inner_text()).strip()
         except:
             pass
 
