@@ -310,32 +310,26 @@ async def main(member_id, start_page, end_page):
                         # --------------------------
                         # link
                         # --------------------------
-                        a = card.locator(
-                            "a[href*='/detail/']"
-                        ).first
+                        links = await card.locator("a").evaluate_all("""
+                        els => els.map(e => e.href)
+                        """)
 
-                        href = await a.get_attribute("href")
+                        print("LINKS:")
+                        for x in links:
+                            print(" ", x)
 
-                        if not href:
+                        # diary/detail だけ抽出
+                        diary_links = [x for x in links if "/diary/detail/" in x]
+
+                        if not diary_links:
+                            print("⚠️ diary/detail 無し")
                             continue
 
-                        if href.startswith("http"):
-
-                            full_url = href
-
-                        else:
-
-                            full_url = (
-                                "https://www.hinatazaka46.com"
-                                + href
-                            )
-
-                        print(f"[{idx}] {full_url}")
-
+                        # 最初の diary/detail を採用
+                        full_url = diary_links[0]
                         norm = normalize_url(full_url)
 
-                        if norm in existing_urls:
-                            continue
+                        print("採用URL:", full_url)
 
                         # --------------------------
                         # date
