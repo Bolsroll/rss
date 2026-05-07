@@ -1,6 +1,6 @@
 import csv
 
-BASE = "https://Bolsroll.github.io/srss/sakura/members_xml/"
+BASE = "https://Bolsroll.github.io/rss/sakura/members_xml/"
 
 html = """<html>
 <head>

@@ -2,7 +2,7 @@
 
 set -e
 
-BASE_DIR="/Users/dig/sakura-rss"
+BASE_DIR="/Users/dig/rss/sakura"
 PYTHON="/usr/local/bin/python3"
 
 cd "$BASE_DIR" || exit 1
