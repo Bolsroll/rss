@@ -6,6 +6,13 @@
 <description>乃木坂ブログRSS</description>
 
         <item>
+            <title>今の私。</title>
+            <link>https://www.nogizaka46.com/s/n46/diary/detail/104680?ima=0021&cd=MEMBER</link>
+            <guid>https://www.nogizaka46.com/s/n46/diary/detail/104680?ima=0021&cd=MEMBER</guid>
+            <pubDate>Sun, 28 Jun 2026 21:31:00 +0900</pubDate>
+        </item>
+        
+        <item>
             <title>是非に及ばずMVが公開されました！</title>
             <link>https://www.nogizaka46.com/s/n46/diary/detail/104679?ima=0021&cd=MEMBER</link>
             <guid>https://www.nogizaka46.com/s/n46/diary/detail/104679?ima=0021&cd=MEMBER</guid>
@@ -346,13 +353,6 @@
             <link>https://www.nogizaka46.com/s/n46/diary/detail/104626?ima=0011&cd=MEMBER</link>
             <guid>https://www.nogizaka46.com/s/n46/diary/detail/104626?ima=0011&cd=MEMBER</guid>
             <pubDate>Wed, 03 Jun 2026 21:36:00 +0900</pubDate>
-        </item>
-        
-        <item>
-            <title>しつもんがえしをブログでもやってみた.com</title>
-            <link>https://www.nogizaka46.com/s/n46/diary/detail/104624?ima=0011&cd=MEMBER</link>
-            <guid>https://www.nogizaka46.com/s/n46/diary/detail/104624?ima=0011&cd=MEMBER</guid>
-            <pubDate>Tue, 02 Jun 2026 20:41:00 +0900</pubDate>
         </item>
         
 </channel>
