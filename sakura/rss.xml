@@ -6,6 +6,13 @@
 <description>櫻坂ブログRSS</description>
 
         <item>
+            <title>おはなし</title>
+            <link>https://sakurazaka46.com/s/s46/diary/detail/69946?ima=0000&cd=blog</link>
+            <guid>https://sakurazaka46.com/s/s46/diary/detail/69946?ima=0000&cd=blog</guid>
+            <pubDate>Mon, 29 Jun 2026 00:00:00 +0900</pubDate>
+        </item>
+        
+        <item>
             <title>#406. ミーグリ2Days!!</title>
             <link>https://sakurazaka46.com/s/s46/diary/detail/69936?ima=0000&cd=blog</link>
             <guid>https://sakurazaka46.com/s/s46/diary/detail/69936?ima=0000&cd=blog</guid>
@@ -346,13 +353,6 @@
             <link>https://sakurazaka46.com/s/s46/diary/detail/69767?ima=0000&cd=blog</link>
             <guid>https://sakurazaka46.com/s/s46/diary/detail/69767?ima=0000&cd=blog</guid>
             <pubDate>Fri, 12 Jun 2026 00:00:00 +0900</pubDate>
-        </item>
-        
-        <item>
-            <title>今夜チャンネルはそのままでお願いします</title>
-            <link>https://sakurazaka46.com/s/s46/diary/detail/69742?ima=0000&cd=blog</link>
-            <guid>https://sakurazaka46.com/s/s46/diary/detail/69742?ima=0000&cd=blog</guid>
-            <pubDate>Thu, 11 Jun 2026 00:00:00 +0900</pubDate>
         </item>
         
 </channel>
