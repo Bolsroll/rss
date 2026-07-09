@@ -6,6 +6,13 @@
 <description>乃木坂ブログRSS</description>
 
         <item>
+            <title>ぐーたら。 金川紗耶</title>
+            <link>https://www.nogizaka46.com/s/n46/diary/detail/104709?ima=0004&cd=MEMBER</link>
+            <guid>https://www.nogizaka46.com/s/n46/diary/detail/104709?ima=0004&cd=MEMBER</guid>
+            <pubDate>Thu, 09 Jul 2026 22:18:00 +0900</pubDate>
+        </item>
+        
+        <item>
             <title>ふと振り返りたくなる</title>
             <link>https://www.nogizaka46.com/s/n46/diary/detail/104708?ima=0004&cd=MEMBER</link>
             <guid>https://www.nogizaka46.com/s/n46/diary/detail/104708?ima=0004&cd=MEMBER</guid>
@@ -346,13 +353,6 @@
             <link>https://www.nogizaka46.com/s/n46/diary/detail/104655?ima=0004&cd=MEMBER</link>
             <guid>https://www.nogizaka46.com/s/n46/diary/detail/104655?ima=0004&cd=MEMBER</guid>
             <pubDate>Mon, 15 Jun 2026 20:14:00 +0900</pubDate>
-        </item>
-        
-        <item>
-            <title>綴夏</title>
-            <link>https://www.nogizaka46.com/s/n46/diary/detail/104653?ima=0004&cd=MEMBER</link>
-            <guid>https://www.nogizaka46.com/s/n46/diary/detail/104653?ima=0004&cd=MEMBER</guid>
-            <pubDate>Sat, 13 Jun 2026 15:04:00 +0900</pubDate>
         </item>
         
 </channel>
