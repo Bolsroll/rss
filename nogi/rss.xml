@@ -6,6 +6,13 @@
 <description>乃木坂ブログRSS</description>
 
         <item>
+            <title>心踊る夏</title>
+            <link>https://www.nogizaka46.com/s/n46/diary/detail/104713?ima=0005&cd=MEMBER</link>
+            <guid>https://www.nogizaka46.com/s/n46/diary/detail/104713?ima=0005&cd=MEMBER</guid>
+            <pubDate>Fri, 10 Jul 2026 20:50:00 +0900</pubDate>
+        </item>
+        
+        <item>
             <title>北海道</title>
             <link>https://www.nogizaka46.com/s/n46/diary/detail/104712?ima=0005&cd=MEMBER</link>
             <guid>https://www.nogizaka46.com/s/n46/diary/detail/104712?ima=0005&cd=MEMBER</guid>
@@ -346,13 +353,6 @@
             <link>https://www.nogizaka46.com/s/n46/diary/detail/104658?ima=0007&cd=MEMBER</link>
             <guid>https://www.nogizaka46.com/s/n46/diary/detail/104658?ima=0007&cd=MEMBER</guid>
             <pubDate>Mon, 15 Jun 2026 21:04:00 +0900</pubDate>
-        </item>
-        
-        <item>
-            <title>Back to Fukui！</title>
-            <link>https://www.nogizaka46.com/s/n46/diary/detail/104657?ima=0006&cd=MEMBER</link>
-            <guid>https://www.nogizaka46.com/s/n46/diary/detail/104657?ima=0006&cd=MEMBER</guid>
-            <pubDate>Mon, 15 Jun 2026 21:03:00 +0900</pubDate>
         </item>
         
 </channel>
