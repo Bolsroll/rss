@@ -6,6 +6,20 @@
 <description>櫻坂ブログRSS</description>
 
         <item>
+            <title>あちち</title>
+            <link>https://sakurazaka46.com/s/s46/diary/detail/70453?ima=0000&cd=blog</link>
+            <guid>https://sakurazaka46.com/s/s46/diary/detail/70453?ima=0000&cd=blog</guid>
+            <pubDate>Tue, 04 Aug 2026 00:00:00 +0900</pubDate>
+        </item>
+        
+        <item>
+            <title>8月もよろしくね。</title>
+            <link>https://sakurazaka46.com/s/s46/diary/detail/70452?ima=0000&cd=blog</link>
+            <guid>https://sakurazaka46.com/s/s46/diary/detail/70452?ima=0000&cd=blog</guid>
+            <pubDate>Tue, 04 Aug 2026 00:00:00 +0900</pubDate>
+        </item>
+        
+        <item>
             <title>兵庫！</title>
             <link>https://sakurazaka46.com/s/s46/diary/detail/70434?ima=0000&cd=blog</link>
             <guid>https://sakurazaka46.com/s/s46/diary/detail/70434?ima=0000&cd=blog</guid>
@@ -339,20 +353,6 @@
             <link>https://sakurazaka46.com/s/s46/diary/detail/70248?ima=0000&cd=blog</link>
             <guid>https://sakurazaka46.com/s/s46/diary/detail/70248?ima=0000&cd=blog</guid>
             <pubDate>Sun, 19 Jul 2026 00:00:00 +0900</pubDate>
-        </item>
-        
-        <item>
-            <title>まだ、ひみつ</title>
-            <link>https://sakurazaka46.com/s/s46/diary/detail/70231?ima=0000&cd=blog</link>
-            <guid>https://sakurazaka46.com/s/s46/diary/detail/70231?ima=0000&cd=blog</guid>
-            <pubDate>Sat, 18 Jul 2026 00:00:00 +0900</pubDate>
-        </item>
-        
-        <item>
-            <title>3分だけ時間をください！</title>
-            <link>https://sakurazaka46.com/s/s46/diary/detail/70219?ima=0000&cd=blog</link>
-            <guid>https://sakurazaka46.com/s/s46/diary/detail/70219?ima=0000&cd=blog</guid>
-            <pubDate>Fri, 17 Jul 2026 00:00:00 +0900</pubDate>
         </item>
         
 </channel>
