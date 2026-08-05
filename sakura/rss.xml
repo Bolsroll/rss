@@ -6,6 +6,13 @@
 <description>櫻坂ブログRSS</description>
 
         <item>
+            <title>こっちゃん</title>
+            <link>https://sakurazaka46.com/s/s46/diary/detail/70466?ima=0000&cd=blog</link>
+            <guid>https://sakurazaka46.com/s/s46/diary/detail/70466?ima=0000&cd=blog</guid>
+            <pubDate>Wed, 05 Aug 2026 00:00:00 +0900</pubDate>
+        </item>
+        
+        <item>
             <title>あちち</title>
             <link>https://sakurazaka46.com/s/s46/diary/detail/70453?ima=0000&cd=blog</link>
             <guid>https://sakurazaka46.com/s/s46/diary/detail/70453?ima=0000&cd=blog</guid>
@@ -346,13 +353,6 @@
             <link>https://sakurazaka46.com/s/s46/diary/detail/70253?ima=0000&cd=blog</link>
             <guid>https://sakurazaka46.com/s/s46/diary/detail/70253?ima=0000&cd=blog</guid>
             <pubDate>Mon, 20 Jul 2026 00:00:00 +0900</pubDate>
-        </item>
-        
-        <item>
-            <title>#413 ひなまつり</title>
-            <link>https://sakurazaka46.com/s/s46/diary/detail/70237?ima=0000&cd=blog</link>
-            <guid>https://sakurazaka46.com/s/s46/diary/detail/70237?ima=0000&cd=blog</guid>
-            <pubDate>Sun, 19 Jul 2026 00:00:00 +0900</pubDate>
         </item>
         
 </channel>
