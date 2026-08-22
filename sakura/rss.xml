@@ -6,6 +6,13 @@
 <description>櫻坂ブログRSS</description>
 
         <item>
+            <title>遠藤 理子</title>
+            <link>https://sakurazaka46.com/s/s46/diary/detail/70682?ima=0000&cd=blog</link>
+            <guid>https://sakurazaka46.com/s/s46/diary/detail/70682?ima=0000&cd=blog</guid>
+            <pubDate>Sat, 22 Aug 2026 00:00:00 +0900</pubDate>
+        </item>
+        
+        <item>
             <title>スタートライン!</title>
             <link>https://sakurazaka46.com/s/s46/diary/detail/70678?ima=0000&cd=blog</link>
             <guid>https://sakurazaka46.com/s/s46/diary/detail/70678?ima=0000&cd=blog</guid>
@@ -346,13 +353,6 @@
             <link>https://sakurazaka46.com/s/s46/diary/detail/70471?ima=0000&cd=blog</link>
             <guid>https://sakurazaka46.com/s/s46/diary/detail/70471?ima=0000&cd=blog</guid>
             <pubDate>Wed, 05 Aug 2026 00:00:00 +0900</pubDate>
-        </item>
-        
-        <item>
-            <title>あちち</title>
-            <link>https://sakurazaka46.com/s/s46/diary/detail/70453?ima=0000&cd=blog</link>
-            <guid>https://sakurazaka46.com/s/s46/diary/detail/70453?ima=0000&cd=blog</guid>
-            <pubDate>Tue, 04 Aug 2026 00:00:00 +0900</pubDate>
         </item>
         
 </channel>
