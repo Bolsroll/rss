@@ -6,6 +6,13 @@
 <description>櫻坂ブログRSS</description>
 
         <item>
+            <title>それでも君は</title>
+            <link>https://sakurazaka46.com/s/s46/diary/detail/70763?ima=0000&cd=blog</link>
+            <guid>https://sakurazaka46.com/s/s46/diary/detail/70763?ima=0000&cd=blog</guid>
+            <pubDate>Thu, 27 Aug 2026 00:00:00 +0900</pubDate>
+        </item>
+        
+        <item>
             <title>#425 GIGA2026</title>
             <link>https://sakurazaka46.com/s/s46/diary/detail/70745?ima=0000&cd=blog</link>
             <guid>https://sakurazaka46.com/s/s46/diary/detail/70745?ima=0000&cd=blog</guid>
@@ -346,13 +353,6 @@
             <link>https://sakurazaka46.com/s/s46/diary/detail/70547?ima=0000&cd=blog</link>
             <guid>https://sakurazaka46.com/s/s46/diary/detail/70547?ima=0000&cd=blog</guid>
             <pubDate>Mon, 10 Aug 2026 00:00:00 +0900</pubDate>
-        </item>
-        
-        <item>
-            <title>中川 智尋</title>
-            <link>https://sakurazaka46.com/s/s46/diary/detail/70512?ima=0000&cd=blog</link>
-            <guid>https://sakurazaka46.com/s/s46/diary/detail/70512?ima=0000&cd=blog</guid>
-            <pubDate>Sun, 09 Aug 2026 00:00:00 +0900</pubDate>
         </item>
         
 </channel>
