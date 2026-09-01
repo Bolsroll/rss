@@ -6,6 +6,13 @@
 <description>櫻坂ブログRSS</description>
 
         <item>
+            <title>かがわ</title>
+            <link>https://sakurazaka46.com/s/s46/diary/detail/70817?ima=0000&cd=blog</link>
+            <guid>https://sakurazaka46.com/s/s46/diary/detail/70817?ima=0000&cd=blog</guid>
+            <pubDate>Tue, 01 Sep 2026 00:00:00 +0900</pubDate>
+        </item>
+        
+        <item>
             <title>#415. ツアー完走！！</title>
             <link>https://sakurazaka46.com/s/s46/diary/detail/70795?ima=0000&cd=blog</link>
             <guid>https://sakurazaka46.com/s/s46/diary/detail/70795?ima=0000&cd=blog</guid>
@@ -346,13 +353,6 @@
             <link>https://sakurazaka46.com/s/s46/diary/detail/70607?ima=0000&cd=blog</link>
             <guid>https://sakurazaka46.com/s/s46/diary/detail/70607?ima=0000&cd=blog</guid>
             <pubDate>Sun, 16 Aug 2026 00:00:00 +0900</pubDate>
-        </item>
-        
-        <item>
-            <title>ちば①</title>
-            <link>https://sakurazaka46.com/s/s46/diary/detail/70603?ima=0000&cd=blog</link>
-            <guid>https://sakurazaka46.com/s/s46/diary/detail/70603?ima=0000&cd=blog</guid>
-            <pubDate>Sat, 15 Aug 2026 00:00:00 +0900</pubDate>
         </item>
         
 </channel>
