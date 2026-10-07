@@ -3,8 +3,15 @@
 <channel>
 <title>勝又 春 Blog</title>
 <link>https://sakurazaka46.com/</link>
-<description>勝又 春のブログRSS（25件）</description>
+<description>勝又 春のブログRSS（26件）</description>
 
+        <item>
+            <title>自分自身</title>
+            <link>https://sakurazaka46.com/s/s46/diary/detail/71310?ima=0000&cd=blog</link>
+            <guid>https://sakurazaka46.com/s/s46/diary/detail/71310?ima=0000&cd=blog</guid>
+            <pubDate>Wed, 07 Oct 2026 00:00:00 +0900</pubDate>
+        </item>
+        
         <item>
             <title>なりたい自分になんかなれない</title>
             <link>https://sakurazaka46.com/s/s46/diary/detail/71232?ima=0000&cd=blog</link>
