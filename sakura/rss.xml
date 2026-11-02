@@ -6,6 +6,13 @@
 <description>櫻坂ブログRSS</description>
 
         <item>
+            <title>11月</title>
+            <link>https://sakurazaka46.com/s/s46/diary/detail/71576?ima=0000&cd=blog</link>
+            <guid>https://sakurazaka46.com/s/s46/diary/detail/71576?ima=0000&cd=blog</guid>
+            <pubDate>Mon, 02 Nov 2026 00:00:00 +0900</pubDate>
+        </item>
+        
+        <item>
             <title>遠藤 理子</title>
             <link>https://sakurazaka46.com/s/s46/diary/detail/71564?ima=0000&cd=blog</link>
             <guid>https://sakurazaka46.com/s/s46/diary/detail/71564?ima=0000&cd=blog</guid>
@@ -346,13 +353,6 @@
             <link>https://sakurazaka46.com/s/s46/diary/detail/71425?ima=0000&cd=blog</link>
             <guid>https://sakurazaka46.com/s/s46/diary/detail/71425?ima=0000&cd=blog</guid>
             <pubDate>Sat, 17 Oct 2026 00:00:00 +0900</pubDate>
-        </item>
-        
-        <item>
-            <title>#437 STAR</title>
-            <link>https://sakurazaka46.com/s/s46/diary/detail/71413?ima=0000&cd=blog</link>
-            <guid>https://sakurazaka46.com/s/s46/diary/detail/71413?ima=0000&cd=blog</guid>
-            <pubDate>Fri, 16 Oct 2026 00:00:00 +0900</pubDate>
         </item>
         
 </channel>
