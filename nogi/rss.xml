@@ -6,6 +6,13 @@
 <description>乃木坂ブログRSS</description>
 
         <item>
+            <title>うがみんしょーらん！</title>
+            <link>https://www.nogizaka46.com/s/n46/diary/detail/104981?ima=0010&cd=MEMBER</link>
+            <guid>https://www.nogizaka46.com/s/n46/diary/detail/104981?ima=0010&cd=MEMBER</guid>
+            <pubDate>Thu, 05 Nov 2026 20:44:00 +0900</pubDate>
+        </item>
+        
+        <item>
             <title>ふたり</title>
             <link>https://www.nogizaka46.com/s/n46/diary/detail/104980?ima=0010&cd=MEMBER</link>
             <guid>https://www.nogizaka46.com/s/n46/diary/detail/104980?ima=0010&cd=MEMBER</guid>
@@ -346,13 +353,6 @@
             <link>https://www.nogizaka46.com/s/n46/diary/detail/104914?ima=0004&cd=MEMBER</link>
             <guid>https://www.nogizaka46.com/s/n46/diary/detail/104914?ima=0004&cd=MEMBER</guid>
             <pubDate>Sun, 18 Oct 2026 20:29:00 +0900</pubDate>
-        </item>
-        
-        <item>
-            <title>秋を満喫したい</title>
-            <link>https://www.nogizaka46.com/s/n46/diary/detail/104913?ima=0005&cd=MEMBER</link>
-            <guid>https://www.nogizaka46.com/s/n46/diary/detail/104913?ima=0005&cd=MEMBER</guid>
-            <pubDate>Sat, 17 Oct 2026 20:58:00 +0900</pubDate>
         </item>
         
 </channel>
